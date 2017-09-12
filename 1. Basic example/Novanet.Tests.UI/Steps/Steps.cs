@@ -10,9 +10,9 @@ namespace Novanet.Tests.UI.Steps
     public class Steps
     {
         [Given(@"I navigate to ""(.*)""")]
-        public void NavigateTo(string page)
+        public void NavigateTo(string url)
         {
-            WebDriver.Current.Navigate().GoToUrl(page);
+            WebDriver.Current.Navigate().GoToUrl(url);
         }
 
         [When(@"I click the link ""(.*)""")]
